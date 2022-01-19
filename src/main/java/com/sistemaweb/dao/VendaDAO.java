@@ -106,15 +106,6 @@ public class VendaDAO {
 			var rs = ps.executeQuery();
 
 			while (rs.next()) {
-				
-				/*
-				 * java.sql.Date date1 = rs.getDate(2);
-				 * 
-				 * long timeInMilliSeconds = date1.getTime();
-				 * 
-				 * Date data = new Date(timeInMilliSeconds); LocalDate localDate =
-				 * data.toInstant().atZone( ZoneId.systemDefault() ).toLocalDate();
-				 */
 		        
 				Venda v = new Venda(rs.getInt(1), LocalDate.now() , rs.getDouble(3), new ArrayList<ItemVenda>());
 				vendas.add(v);
