@@ -44,8 +44,6 @@ public class VendaDAO {
 		return idVenda;
 	}
 	
-	
-
 	public boolean addItemVenda(int idVenda, ItemVenda item) {
 		return false;
 	}
